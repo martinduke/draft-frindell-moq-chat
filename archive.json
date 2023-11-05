@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-02T00:30:30.017406+00:00",
+  "timestamp": "2023-11-05T00:33:35.214262+00:00",
   "repo": "afrind/draft-frindell-moq-chat",
   "labels": [
     {
@@ -50,5 +50,32 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOJ8iUAc5eeW1p",
+      "title": "Use a virtual control tracks for joining/leaving the chat",
+      "url": "https://github.com/afrind/draft-frindell-moq-chat/pull/1",
+      "state": "OPEN",
+      "author": "afrind",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-11-02T20:54:59Z",
+      "updatedAt": "2023-11-02T20:54:59Z",
+      "baseRepository": "afrind/draft-frindell-moq-chat",
+      "baseRefName": "main",
+      "baseRefOid": "bd5683e76624510b477ba86891f8880b22f057c0",
+      "headRepository": "afrind/draft-frindell-moq-chat",
+      "headRefName": "control-track",
+      "headRefOid": "826b8da866ef7898e151f764453c148511382959",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
