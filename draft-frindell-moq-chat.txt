@@ -4,8 +4,8 @@
 
 Media Over QUIC                                              A. Frindell
 Internet-Draft                                                      Meta
-Intended status: Informational                              17 July 2023
-Expires: 18 January 2024
+Intended status: Informational                           9 November 2023
+Expires: 12 May 2024
 
 
                                 MoQ Chat
@@ -48,7 +48,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 January 2024.
+   This Internet-Draft will expire on 12 May 2024.
 
 Copyright Notice
 
@@ -157,22 +157,22 @@ Table of Contents
 
 4.4.  Joining the Chat
 
-   To join the chat a participant sends an ANNOUNCE message to the
-   server with a track namespace of moq-chat/id/username, which is also
-   the Full Track Name.  The moq-chat serer will reply with an ANNOUNCE
-   OK if joining was successful or ANNOUNCE ERROR if the join failed.
+   To join the chat a participant sends a SUBSCRIBE message to moq-chat/
+   id in order to get the participant list and subsequent participant
+   updates.  This SUBSCRIBE requires the AUTHORIZATION_INFO to contain
+   the participant's ASCII string username.  It is RECOMMENDED the
+   participant request the catalog starting from the beginning of the
+   current Group.  The moq-chat server will reply with an SUBSCRIBE_OK
+   if joining was successful or SUBSCRIBE_ERROR if the join failed.
 
-   The participant SHOULD also send a SUBSCRIBE message to moq-chat/id
-   in order to get the participant list and subsequent participant
-   updates.  It is RECOMMENDED the participant request the catalog
-   starting from the latest Group.  If the participant wishes to operate
-   in "All-Broadcast, No Receive" Mode, it can omit subscribing to the
-   chat catalog.
+   The participant also sends an ANNOUNCE message to the server with a
+   track namespace of moq-chat/id/participant/username, and an empty
+   Track Name.
 
-   When a moq-chat server receives an ANNOUNCE and sends an ANNOUNCE OK,
-   it MUST update the catalog.  It can either publish a new Group with
-   the updated particiant list, a delta encoding against the current
-   Group, or both.
+   When a moq-chat server receives a SUBSCRIBE and sends an SUBSCRIBE
+   OK, it MUST update the catalog.  It can either publish a new Group
+   with the updated particiant list, a delta encoding against the
+   current Group, or both.
 
 4.5.  Subscribing to Chat Messages
 
@@ -226,9 +226,9 @@ Table of Contents
 
    [MOQT]     Curley, L., Pugin, K., Nandakumar, S., and V. Vasiliev,
               "Media over QUIC Transport", Work in Progress, Internet-
-              Draft, draft-ietf-moq-transport-00, 5 July 2023,
+              Draft, draft-ietf-moq-transport-01, 23 October 2023,
               <https://datatracker.ietf.org/doc/html/draft-ietf-moq-
-              transport-00>.
+              transport-01>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
