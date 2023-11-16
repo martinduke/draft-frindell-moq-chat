@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-14T00:31:12.792833+00:00",
+  "timestamp": "2023-11-16T00:32:17.751280+00:00",
   "repo": "afrind/draft-frindell-moq-chat",
   "labels": [
     {
@@ -63,7 +63,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2023-11-02T20:54:59Z",
-      "updatedAt": "2023-11-02T20:54:59Z",
+      "updatedAt": "2023-11-15T23:55:47Z",
       "baseRepository": "afrind/draft-frindell-moq-chat",
       "baseRefName": "main",
       "baseRefOid": "bd5683e76624510b477ba86891f8880b22f057c0",
@@ -74,7 +74,15 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "martinduke",
+          "authorAssociation": "NONE",
+          "body": "Assuming this is an accurate description of your app, please land it!",
+          "createdAt": "2023-11-15T23:55:47Z",
+          "updatedAt": "2023-11-15T23:55:47Z"
+        }
+      ],
       "reviews": []
     }
   ]
